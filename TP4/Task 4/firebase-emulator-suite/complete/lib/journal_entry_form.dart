@@ -32,7 +32,6 @@ class _EntryFormState extends State<EntryForm> {
             children: [
               TextFormField(
                 decoration: const InputDecoration(labelText: 'Title'),
-                // The validator receives the text that the user has entered.
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter some text';
@@ -69,7 +68,6 @@ class _EntryFormState extends State<EntryForm> {
                   padding: const EdgeInsets.symmetric(vertical: 16.0),
                   child: FilledButton(
                     onPressed: () {
-                      // Validate returns true if the form is valid, or false otherwise.
                       if (_formKey.currentState!.validate()) {
                         final entry = Entry(
                           title: title,

@@ -1,7 +1,3 @@
-// Copyright 2022 The Flutter Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -44,19 +40,14 @@ class ApplicationState extends ChangeNotifier {
     'call_to_action': 'Join us for a day full of Firebase Workshops and Pizza!',
   };
 
-  // ignoring lints on these fields since we are modifying them in a different
-  // part of the codelab
-  // ignore: prefer_final_fields
   bool _enableFreeSwag = defaultValues['enable_free_swag'] as bool;
 
   bool get enableFreeSwag => _enableFreeSwag;
 
-  // ignore: prefer_final_fields
   String _eventDate = defaultValues['event_date'] as String;
 
   String get eventDate => _eventDate;
 
-  // ignore: prefer_final_fields
   String _callToAction = defaultValues['call_to_action'] as String;
 
   String get callToAction => _callToAction;

@@ -1,15 +1,8 @@
-/// -----------------------------------
-///          External Packages
-/// -----------------------------------
-
 import 'package:flutter/material.dart';
 import 'package:auth0_flutter/auth0_flutter.dart';
 
 const appScheme = 'flutterdemo'; // 👈 New code
 
-/// -----------------------------------
-///           Profile Widget
-/// -----------------------------------
 class Profile extends StatelessWidget {
   final Future<void> Function() logoutAction;
   final UserProfile? user;
@@ -48,9 +41,6 @@ class Profile extends StatelessWidget {
   }
 }
 
-/// -----------------------------------
-///            Login Widget
-/// -----------------------------------
 class Login extends StatelessWidget {
   final Future<void> Function() loginAction;
   final String loginError;
@@ -75,10 +65,6 @@ class Login extends StatelessWidget {
   }
 }
 
-/// -----------------------------------
-///                 App
-/// -----------------------------------
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
@@ -86,9 +72,6 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
-/// -----------------------------------
-///              App State
-/// -----------------------------------
 
 class _MyAppState extends State<MyApp> {
   Credentials? _credentials;
